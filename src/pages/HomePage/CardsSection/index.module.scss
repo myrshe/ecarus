@@ -10,7 +10,6 @@
 }
 
 .card {
-  background: #fff;
   border: 1px solid #E6EAF2;
   border-radius: 1rem;
   box-shadow: none;
@@ -34,7 +33,7 @@
 }
 
 .cardText h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #000B26;
   margin: 0 0 0.5rem 0;
@@ -48,7 +47,6 @@
 }
 
 .cardBtn {
-  background: #F5F7FA;
   border: none;
   width: 2.5rem;
   height: 2.5rem;
@@ -61,28 +59,3 @@
 }
 
 
-/*
-@media (max-width: 900px) {
-  .cardsWrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 3vh;
-  }
-  .card {
-    width: 90vw;
-    max-width: 95vw;
-    min-width: 0;
-    padding: 2vh 4vw;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .cardImg {
-    width: 60vw;
-    max-width: 16rem;
-    margin-left: 0;
-    margin-top: 2vh;
-  }
-  .cardText p {
-    max-width: 80vw;
-  }
-}*/

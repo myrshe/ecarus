@@ -1,7 +1,5 @@
-import React from "react";
-import BannerSlider from "./BannerSlider";
-import CardsSection from "./CardsSection";
-import InfoBanners from "./InfoBanners";
+import BannerSlider from "./BannerSlider/index.tsx";
+import CardsSection from "./CardsSection/index.tsx";
 import styles from "./index.module.scss";
 
 const HomePage = () => {
@@ -9,7 +7,6 @@ const HomePage = () => {
     <div className={styles.homePage}>
       <BannerSlider />
       <CardsSection />
-      <InfoBanners />
     </div>
   );
 };

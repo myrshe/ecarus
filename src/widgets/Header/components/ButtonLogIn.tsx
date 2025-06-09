@@ -1,23 +1,20 @@
-// import {useState} from "react";
+import { useState } from "react";
 // import { Modal } from 'shared/ui/Modal';
 import styles from '../index.module.scss';
 import logIn from '@/assets/images/icon/Login.svg'
-
+import AuthModal from '@/widgets/AuthModal';
 
 export const ButtonLogIn = () => {
-    // const [isOpened, setIsOpened] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
-            <button onClick={() => alert('Здесь будет авторизация!')}
+            <button onClick={() => setIsOpen(true)}
                     className={styles.buttonLogIn}>
                 <img src={logIn} alt="icon LogIn" width={35}/>
                 войти
             </button>
-            {/*<button onClick={() => setIsOpened(true)} className={styles.loginButton}>
-                Войти
-            </button>*/}
-            {/*{isOpened && <Modal onClose={() => setIsOpened(false)}>Форма входа</Modal>}*/}
+            {isOpen && <AuthModal onClose={() => setIsOpen(false)} />}
         </>
     )
 };

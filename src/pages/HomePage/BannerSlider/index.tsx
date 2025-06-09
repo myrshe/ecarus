@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import bannerCleanerWorld from '@/assets/images/photo/bannerCleanerWorld.png';
 import doYouKnow from '@/assets/images/photo/doYouKnow.png';
 import whatsWithTheMasks from '@/assets/images/photo/whatsWithTheMasks.png';
 import arrowLeft from '@/assets/images/icon/arrowLeft.svg';
 import arrowRight from '@/assets/images/icon/arrowRight.svg';
-import styles from './BannerSlider.module.scss';
+import styles from './index.module.scss';
 
 const slides = [
   bannerCleanerWorld,
@@ -12,7 +12,7 @@ const slides = [
   whatsWithTheMasks,
 ];
 
-const BannerSlider = () => {
+const Index = () => {
   const [current, setCurrent] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -47,4 +47,4 @@ const BannerSlider = () => {
   );
 };
 
-export default BannerSlider; 
+export default Index;

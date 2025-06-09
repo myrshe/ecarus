@@ -1,9 +1,8 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import mapImg from '@/assets/images/photo/map.png';
 import ecoMarketImg from '@/assets/images/photo/ecoMarket.png';
 import arrow from '@/assets/images/icon/arrow.svg';
-import styles from './CardsSection.module.scss';
+import styles from './index.module.scss';
 
 const cards = [
   {
@@ -20,7 +19,7 @@ const cards = [
   },
 ];
 
-const CardsSection = () => {
+const Index = () => {
   const navigate = useNavigate();
   return (
       <div className={styles.cardsWrapper}>
@@ -32,8 +31,7 @@ const CardsSection = () => {
                 <button
                     className={styles.cardBtn}
                     onClick={() => navigate(card.link)}
-                    aria-label="Подробнее"
-                >
+                    aria-label="Подробнее">
                   <img src={arrow} alt="arrow" />
                 </button>
               </div>
@@ -44,4 +42,4 @@ const CardsSection = () => {
   );
 };
 
-export default CardsSection;
+export default Index;

@@ -1,4 +1,3 @@
-import React from "react";
 import ecoMarketImg from '@/assets/images/photo/ecoMarket.png';
 
 const EcoMarketPage = () => (

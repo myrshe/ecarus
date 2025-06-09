@@ -1,4 +1,3 @@
-import React from "react";
 import mapImg from '@/assets/images/photo/map.png';
 
 const CollectionPointsPage = () => (
