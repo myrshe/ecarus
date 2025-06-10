@@ -10,7 +10,7 @@ type Props = {
   onSuccess: () => void;
 };
 
-const AuthForm: React.FC<Props> = ({ onSms, onPartner, onError, onSuccess }) => {
+export const AuthForm: React.FC<Props> = ({ onSms, onPartner, onError, onSuccess }) => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const { setUser } = useUser();
@@ -22,7 +22,11 @@ const AuthForm: React.FC<Props> = ({ onSms, onPartner, onError, onSuccess }) => 
         name: "Полина",
         email: "polina@gmail.com",
         phone: "88008008888",
-        avatar: ava
+        avatar: ava,
+        city: 'Казань',
+        coins: 1000,
+        history: [],
+        promos: []
       });
       onSuccess();
     } else {
@@ -56,4 +60,3 @@ const AuthForm: React.FC<Props> = ({ onSms, onPartner, onError, onSuccess }) => 
   );
 };
 
-export default AuthForm; 

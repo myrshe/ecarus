@@ -11,7 +11,7 @@ type Props = {
   onPartner: () => void;
 };
 
-const CodeForm: React.FC<Props> = ({ phone, onSuccess, onError, onBack, onPartner }) => {
+export const CodeForm: React.FC<Props> = ({ phone, onSuccess, onError, onBack, onPartner }) => {
   const [code, setCode] = useState("");
   const [error, setError] = useState("");
   const { setUser } = useUser();
@@ -23,7 +23,11 @@ const CodeForm: React.FC<Props> = ({ phone, onSuccess, onError, onBack, onPartne
         name: "Полина",
         email: "polina@gmail.com",
         phone: "88008008888",
-        avatar: ava
+        avatar: ava,
+        city: 'Казань',
+        coins: 1000,
+        history: [],
+        promos: []
       });
       onSuccess();
     } else {
@@ -57,4 +61,3 @@ const CodeForm: React.FC<Props> = ({ phone, onSuccess, onError, onBack, onPartne
   );
 };
 
-export default CodeForm;

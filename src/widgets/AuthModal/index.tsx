@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styles from "./index.module.scss";
-import AuthForm from "./components/AuthForm";
-import SmsForm from "./components/SmsForm";
-import CodeForm from "./components/CodeForm";
-import PartnerForm from "./components/PartnerForm";
+import {AuthForm} from "./components/AuthForm";
+import {SmsForm} from "./components/SmsForm";
+import {CodeForm} from "./components/CodeForm";
+import {PartnerForm} from "./components/PartnerForm";
 
 type Step = "auth" | "sms" | "code" | "partner";
 

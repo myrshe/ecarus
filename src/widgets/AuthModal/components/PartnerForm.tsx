@@ -5,7 +5,7 @@ type Props = {
   onBack: () => void;
 };
 
-const PartnerForm: React.FC<Props> = ({ onBack }) => {
+export const PartnerForm: React.FC<Props> = ({ onBack }) => {
   const [org, setOrg] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -46,4 +46,3 @@ const PartnerForm: React.FC<Props> = ({ onBack }) => {
   );
 };
 
-export default PartnerForm;

@@ -7,7 +7,7 @@ type Props = {
   onPartner: () => void;
 };
 
-const SmsForm: React.FC<Props> = ({ onGetCode, onBack, onPartner }) => {
+export const SmsForm: React.FC<Props> = ({ onGetCode, onBack, onPartner }) => {
   const [phone, setPhone] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -37,4 +37,3 @@ const SmsForm: React.FC<Props> = ({ onGetCode, onBack, onPartner }) => {
   );
 };
 
-export default SmsForm;
