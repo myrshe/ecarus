@@ -1,7 +1,7 @@
 import { useUser } from '@/shared/context/UserContext';
 import styles from './index.module.scss';
 
-const ProfileCard = () => {
+export const ProfileCard = () => {
   const { user } = useUser();
 
   if (!user) return <div className={styles.notAuth}>Вы не авторизованы</div>;
@@ -16,4 +16,3 @@ const ProfileCard = () => {
   );
 };
 
-export default ProfileCard; 

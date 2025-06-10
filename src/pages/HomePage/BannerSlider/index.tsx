@@ -12,7 +12,7 @@ const slides = [
   whatsWithTheMasks,
 ];
 
-const Index = () => {
+export const BannerSlider = () => {
   const [current, setCurrent] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -31,7 +31,7 @@ const Index = () => {
   return (
     <div className={styles.sliderWrapper}>
       <div className={styles.slide}>
-        <button className={styles.arrowLeft} onClick={prevSlide} aria-label="Назад">
+        <button className={styles.arrowLeft} onClick={prevSlide} aria-label="назад">
           <img src={arrowLeft} alt="arrow left" />
         </button>
         <img
@@ -47,4 +47,3 @@ const Index = () => {
   );
 };
 
-export default Index;

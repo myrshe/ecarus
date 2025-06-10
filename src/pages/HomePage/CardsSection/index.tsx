@@ -19,7 +19,7 @@ const cards = [
   },
 ];
 
-const Index = () => {
+export const CardsSection = () => {
   const navigate = useNavigate();
   return (
       <div className={styles.cardsWrapper}>
@@ -41,5 +41,3 @@ const Index = () => {
       </div>
   );
 };
-
-export default Index;

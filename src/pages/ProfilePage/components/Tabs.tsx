@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styles from "../index.module.scss";
-import Index from "./HistoryTab";
-import PromoTab from "./PromoTab";
+import {HistoryTab} from "./HistoryTab/index.tsx";
+import {PromoTab} from "./PromoTab/index.tsx";
 import { useUser } from '@/shared/context/UserContext';
 
-const Tabs = () => {
+export const Tabs = () => {
     const [active, setActive] = useState <"history" | "promo"> ("history");
     const {user } = useUser();
 
@@ -27,10 +27,9 @@ const Tabs = () => {
                 </button>
             </div>
             <div>
-                {active === "history" ?<Index /> : <PromoTab />}
+                {active === "history" ?<HistoryTab /> : <PromoTab />}
             </div>
         </div>
     );
 };
 
-export default Tabs;

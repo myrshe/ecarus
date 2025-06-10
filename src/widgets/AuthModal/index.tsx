@@ -7,7 +7,7 @@ import PartnerForm from "./components/PartnerForm";
 
 type Step = "auth" | "sms" | "code" | "partner";
 
-const AuthModal = ({ onClose }: { onClose: () => void }) => {
+export const AuthModal = ({ onClose }: { onClose: () => void }) => {
     const [step, setStep] = useState<Step>("auth");
     const [phone, setPhone] = useState("");
     const [error, setError] = useState("");
@@ -53,5 +53,3 @@ const AuthModal = ({ onClose }: { onClose: () => void }) => {
         </div>
     );
 };
-
-export default AuthModal;

@@ -16,7 +16,7 @@ const history = [
     },
 ];
 
-const Index = () => (
+export const HistoryTab = () => (
     <div className={styles.tabContent}>
         {history.map((item, i) => (
             <div className={styles.historyCard} key={i}>
@@ -39,4 +39,3 @@ const Index = () => (
     </div>
 );
 
-export default Index;

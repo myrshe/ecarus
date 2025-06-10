@@ -1,4 +1,4 @@
-import styles from "../index.module.scss";
+import styles from "../../index.module.scss";
 
 const promos = [
     {
@@ -24,7 +24,7 @@ const promos = [
     },
 ];
 
-const PromoTab = () => (
+export const PromoTab = () => (
     <div className={styles.tabContent}>
         {promos.map((promo, i) => (
             <div className={styles.promoCard} key={i}>
@@ -45,4 +45,3 @@ const PromoTab = () => (
     </div>
 );
 
-export default PromoTab;
